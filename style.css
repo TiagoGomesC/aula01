@@ -1,0 +1,117 @@
+/* Estilo básico para combinar com a identidade */
+.header-nav {
+    display: flex;
+    gap: 12px;
+    text-align: center;
+    background-color: #e9d8a6;
+    background-color: #f0e6ff;
+    color: #4a2e80;
+    /* Roxo escuro para bom contraste do texto */
+}
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Esquerda: Logo 
+    align-items: center;            /* Alinha tudo verticalmente no centro */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Links de Navegação */
+.header-nav {
+    display: flex;
+    gap: 16px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #4a2e80;                 /* Roxo escuro para os textos */
+}
+
+.header-logo {
+    height: 100px; /* Ajuste a altura conforme o tamanho da sua imagem */
+    width: auto;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #4a004e;
+    font-size: 1rem;
+    padding: 5px 20px;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    border-radius: 40%;
+    /* Fundo roxo claro e texto */
+    background-color: #e9d8a6;
+    /* Ou escolha uma das opções de roxo abaixo */
+    background-color: #f0e6ff;
+    /* Roxo bem suave (Lavanda) */
+    color: #4a2e80;
+    /* Roxo escuro para bom contraste do texto */
+
+    /* Bordas arredondadas e espaçamento interno */
+    border-radius: 16px;
+    /* 40% costuma deformar textos baixos; 12px a 20px funciona melhor */
+    padding: 20px 30px;
+    /* Espaço interno para o texto respirar */
+
+    /* Opcional: largura e alinhamento do bloco */
+    max-width: 600px;
+    margin: 20px auto;
+    /* Centraliza o bloco na página */
+}
+
+
+
+.search-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #e9d8a6;
+    /* Ou escolha uma das opções de roxo abaixo */
+    background-color: #f0e6ff;
+    /* Roxo bem suave (Lavanda) */
+    color: #4a2e80;
+    /* Roxo escuro para bom contraste do texto */
+}

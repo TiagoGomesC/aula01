@@ -1,5 +1,6 @@
 <?php require_once __DIR__ . '/../includes/header.php'; ?>
 <?php require_once __DIR__ . '/../includes/function.php'; ?>
+<?php require_once __DIR__ .'/../conecta.php'; ?>
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -9,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     exit();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -110,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </style>
     <main>
         <h2>
-            Cadastre-se pra se juntar a nós!
+            Cadastre-se na nossa mesa!
         </h2>
         <form action="" method="post">
             <label for="nome">Nome: </label>

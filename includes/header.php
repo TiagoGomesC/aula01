@@ -23,7 +23,7 @@
             <!-- Links de Navegação -->
             <nav class="header-nav">
                 <a href="https://www.youtube.com/@SomosMesa4" target="_blank" class="nav-btn">Acompanhe nossos vídeos</a>
-                <a href="/bcd/aula01/cadastro.php" class="nav-btn">Se Cadastre</a>
+                <a href="../cad/cadastro.php" class="nav-btn">Se Cadastre</a>
             </nav>
         </div>
     </header>

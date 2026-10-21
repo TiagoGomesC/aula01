@@ -23,8 +23,7 @@
             <h2>
                 Aqui temos todos os livros favoritos dos integrantes do Mesa 4
             </h2>
-            <?php require_once __DIR__ . '/pesquisafilme.php' ?>
-            <hr>
+
         </div>
     </section>
 

@@ -23,9 +23,10 @@
             <!-- Links de Navegação -->
             <nav class="header-nav">
                 <a href="https://www.youtube.com/@SomosMesa4" target="_blank" class="nav-btn">Acompanhe nossos vídeos</a>
-                <a href="../cad/cadastro.php" class="nav-btn">Se Cadastre</a>
-                <a href="../cad/atualiza.php" class="nav-btn">Atualize seu Cadastro</a>
-                
+                <a href="/novomesacinema/cad/cadastro.php" class="nav-btn">Se Cadastre</a>
+                <a href="/novomesacinema/cad/atualiza.php" class="nav-btn">Atualize seu Cadastro</a>
+                <a href="/novomesacinema/index.php/filmes.php" class="nav-btn">Recomendacoes da mesa</a>
+
             </nav>
         </div>
     </header>

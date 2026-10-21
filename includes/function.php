@@ -54,25 +54,7 @@ function listarFilmes($conexao)
         return [];
     }
 }
-
-// Busca o cadastro do usuário pelo ID (sem expor para ele no formulário)
-function buscarUsuarioPorId($conexao, $id)
-{
-    $sql = "SELECT id, nome, email, senha FROM clientes WHERE id = :id";
-
-    try {
-        $stmt = $conexao->prepare($sql);
-        // O bindParam garante a segurança contra SQL Injection
-        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
-        $stmt->execute();
-
-        // Retorna um array associativo com os dados do cliente
-        return $stmt->fetch(PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-        echo "Erro ao buscar usuário: " . $e->getMessage();
-        return null;
-    }
-}
+ 
 // Função para buscar todos os cadastros no banco de dados (READ)
 function listarClientes($conexao, $email)
 {
@@ -90,13 +72,14 @@ function listarClientes($conexao, $email)
     }
 }
 function atualizar($conexao, $id, $nome, $email, $senha)
+
 {
-    $sql = "UPDATE clientes SET nome = :nome, email = :email, senha = :senha WHERE id = :id";
+    $sql = "UPDATE clientes SET nome = :novonome, email = :email, senha = :senha WHERE nome = :nome";
 
     try {
         $stmt = $conexao->prepare($sql);
-        $stmt->bindParam(":id", $id);
         $stmt->bindParam(":nome", $nome);
+        $stmt->bindParam(":novonome", $nome);
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":senha", $senha);
 
@@ -110,14 +93,14 @@ function atualizar($conexao, $id, $nome, $email, $senha)
 
 function verconta($conexao, $id)
 {
-    $sql = "SELECT id FROM clientes WHERE id = :id";
+    $sql = "SELECT * FROM clientes WHERE id = :id";
     try {
         $stmt = $conexao->prepare($sql);
         $stmt->bindParam(':id', $id);
         $stmt->execute();
 
         $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+        $id = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach ($clientes as $clientes) {
             echo "ID: {$clientes['id']}<br>";
         }
@@ -126,6 +109,21 @@ function verconta($conexao, $id)
     } catch (PDOException $e) {
         echo "Erro: " . $e->getMessage();
         return null;
+    }
+}
+
+function apagar($conexao, $nome)
+{
+    $sql = "DELETE FROM clientes WHERE nome = :nome";
+
+    try {
+        $stmt = $conexao->prepare($sql);
+        $stmt->bindParam(":nome", $nome);
+        $stmt->execute();
+
+        echo "<p>Cliente apagado com sucesso!</p>";
+    } catch (PDOException $e) {
+        echo "Erro ao apagar: " . $e->getMessage();
     }
 }
 ?>

@@ -6,7 +6,7 @@ require_once __DIR__ . '/../conecta.php';
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    atualizar($conexao, $_POST['id'], $_POST['nome'], $_POST['email'], $_POST['senha']);
+    atualizar($conexao, $_POST['novonome'], $_POST['nome'], $_POST['email'], $_POST['senha']);
 }
 ?>
 
@@ -27,22 +27,28 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         <form action="" method="post">
             
-            <label for="id">id</label>
-            <input type="id" name="id" id="id" required><br>
-
-            <label for="nome">Nome: </label>
+            <label for="nome">Insira seu atual Nome: </label>
             <input type="text" name="nome" id="nome" required><br>
+            
+            <label for="nome">Insira seu novo nome</label>
+            <input type="text" name="novonome" id="novonome" required><br>
 
-            <label for="email">E-mail: </label>
+            <label for="email">Seu novo E-mail: </label>
             <input type="email" name="email" id="email" required><br>
 
-            <label for="senha">Senha: </label>
+            <label for="senha">Sua nova Senha: </label>
             <input type="password" name="senha" id="senha" required><br><br>
 
             <input type="submit" value="Atualizar">
             <input type="reset" value="Limpar">
         </form>
     </main>
+    <?php
+        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+            atualizar($conexao, $_POST['nome'], $_POST['novonome'], $_POST['email'], $_POST['senha'] );
+        }
+        ?>
+        
 
     <?php include __DIR__ . '/../includes/footer.php'; ?>
 </body>

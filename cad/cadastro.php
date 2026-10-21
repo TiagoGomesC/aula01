@@ -6,7 +6,7 @@
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     cadastrar($conexao, $_POST['nome'], $_POST['email'], $_POST['senha']);
 
-    header("Location: /../index.php");
+    header("Location: ../index.php");
     exit();
 }
 ?>

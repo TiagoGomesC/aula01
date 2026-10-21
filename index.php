@@ -6,11 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisar livros</title>
+    <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alice&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/novomesacinema/style.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                 Bem vindos ao MesaCinema!
             </h1>
             <h2>
-                Aqui temos todos os livros favoritos dos integrantes do Mesa 4
+                Aqui temos todos os filmes em cartaz favoritos dos integrantes do Mesa 4!
             </h2>
 
         </div>

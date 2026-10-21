@@ -24,6 +24,8 @@
             <nav class="header-nav">
                 <a href="https://www.youtube.com/@SomosMesa4" target="_blank" class="nav-btn">Acompanhe nossos vídeos</a>
                 <a href="../cad/cadastro.php" class="nav-btn">Se Cadastre</a>
+                <a href="../cad/atualiza.php" class="nav-btn">Atualize seu Cadastro</a>
+                
             </nav>
         </div>
     </header>

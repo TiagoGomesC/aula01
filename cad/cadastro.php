@@ -122,6 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <label for="senha">Senha: </label>
             <input type="password" name="senha" id="senha"><br>
             <input type="submit" value="Cadastrar ">
+            
     </main>
 
 </body>

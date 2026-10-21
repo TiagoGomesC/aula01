@@ -4,9 +4,13 @@
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    cadastrar($conexao, $_POST['nome'], $_POST['email'], $_POST['senha']);
+    // Pega o caminho da imagem do campo hidden preenchido pelo <img>
+    $capa = $_POST['capa'];
 
-    header("Location: /../index.php");
+    cadastrarFilme($conexao, $_POST['titulo'], $_POST['sinopse'], $capa, $_POST['duracao']);
+
+   // Redireciona diretamente para o filmes.php
+    header("Location: filmes.php");
     exit();
 }
 ?>
@@ -22,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <main>
         <h2>Cadastrar Novo Filme na mesa</h2>
 
-      <form action="" method="post">
+     <form action="" method="post">
             <label for="titulo">Título do Filme:</label><br>
             <input type="text" name="titulo" id="titulo" required><br><br>
 
@@ -31,15 +35,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             <!-- Exibição visual da imagem com a tag <img> -->
             <label>Pré-visualização da Capa:</label><br>
-            <img src="/imagens/capa-padrao.jpg" alt="Capa do Filme" id="preview-capa" width="150"><br><br>
+            <input type="file" accept="image/*"><br><br>
 
             <!-- Campo oculto que envia o caminho da imagem no POST -->
-            <input type="hidden" name="capa_url" value="/imagens/capa-padrao.jpg"><br>
+            <input type="hidden" name="capa" value="/imagens/capa-padrao.jpg"><br>
 
             <label for="duracao">Duração (em minutos):</label><br>
             <input type="number" name="duracao" id="duracao" required><br><br>
 
-            <input type="submit" value="Cadastrar na mesa">
+            <input type="submit" value="Cadastrar Filme">
         </form>
     </main>
 <body>

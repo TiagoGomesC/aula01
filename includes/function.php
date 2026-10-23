@@ -91,24 +91,20 @@ function atualizar($conexao, $id, $nome, $email, $senha)
 }
 
 
-function verconta($conexao, $id)
+function buscarCliente($conexao, $nome)
 {
-    $sql = "SELECT * FROM clientes WHERE id = :id";
+    $sql = "SELECT nome, email FROM clientes WHERE nome LIKE :nome";
+
     try {
         $stmt = $conexao->prepare($sql);
-        $stmt->bindParam(':id', $id);
+        $nomeBusca = "%" . $nome . "%";
+        $stmt->bindParam(":nome", $nomeBusca);
         $stmt->execute();
 
-        $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        $id = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        foreach ($clientes as $clientes) {
-            echo "ID: {$clientes['id']}<br>";
-        }
-
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
-        echo "Erro: " . $e->getMessage();
-        return null;
+        echo "Erro ao buscar cliente: " . $e->getMessage();
+        return [];
     }
 }
 

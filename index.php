@@ -14,20 +14,34 @@
 </head>
 
 <body>
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
     <section>
         <div>
             <hr>
             <h1>
-                Bem vindos ao MesaCinema!
+                Bem vindos ao mesa cinema!
             </h1>
             <h2>
                 Aqui temos todos os filmes em cartaz favoritos dos integrantes do Mesa 4!
             </h2>
 
+            <section>
+                <p>
+                    Confira o novo video do
+                    <a href="https://youtu.be/MQmlfpDqM2s?si=_R5ynNAvnm1KLof1" target="_blank" class="nav-btn">Mesa 4!</a>
+                </p>
+            </section>
+
+
+
         </div>
     </section>
 
-<?php include __DIR__ . '/includes/footer.php' ?>
+    <?php include __DIR__ . '/includes/footer.php' ?>
 </body>
 
 </html>

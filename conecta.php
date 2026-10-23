@@ -9,7 +9,7 @@ try {
         $user,
         $pass
     );
-    echo "Bem vinda(o)!";
+    echo "Oii mesaria(o)!";
     return $conexao;
 } catch (PDOException $e){
     echo "Erro: ". $e->getMessage();

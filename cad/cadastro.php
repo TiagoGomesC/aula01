@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeCadastre</title>
-    <link rel="stylesheet" href="/novomesacinema/style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -110,20 +110,29 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             transform: scale(0.98);
         }
     </style>
-    <main>
-        <h2>
-            Cadastre-se na nossa mesa!
-        </h2>
-        <form action="" method="post">
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome"><br>
-            <label for="email">E-mail: </label>
-            <input type="text" name="email" id="email"><br>
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha"><br>
-            <input type="submit" value="Cadastrar ">
-            
+    <div class="card-cadastro">
+            <h2>Cadastre-se na nossa mesa!</h2>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <input type="submit" value="Cadastrar" class="btn-cadastrar">
+            </form>
+        </div>
     </main>
+
 
 </body>
 

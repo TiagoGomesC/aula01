@@ -196,6 +196,20 @@ novomesacinema/
 └── style.css
 
 ---
+##  1. Product Backlog
+
+O Product Backlog organiza as funcionalidades e melhorias do projeto **Mesa Cinema**, priorizadas pelo valor entregue ao usuário e pela essencialidade para o funcionamento do site.
+
+| ID | Estória de Usuário (User Story) | Requisito Relacionado | Prioridade | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **US01** | Como visitante, quero acessar a página inicial para conhecer o propósito do Mesa Cinema e navegar pelo site. | RF01 | Alta | Concluído |
+| **US02** | Como visitante, quero um botão de acesso rápido para ir direto ao canal no YouTube **Mesa Quatro**. | RF02 | Alta | Concluído |
+| **US03** | Como visitante, quero visualizar a lista de recomendações dos filmes em cartaz e assistir aos seus trailers. | RF03 | Alta | Concluído |
+| **US04** | Como novo usuário, quero me cadastrar no site informando meus dados para criar uma conta. | RF04 | Alta | Concluído |
+| **US05** | Como usuário cadastrado, quero fazer login para acessar minha área restrita no site. | RF05 | Alta | Concluído |
+| **US06** | Como usuário autenticado, quero visualizar meus dados na página "Minha Conta". | RF06 | Média | Concluído |
+| **US07** | Como usuário autenticado, quero atualizar minhas informações cadastrais caso necessário. | RF06 | Média | Concluído |
+| **US08** | Como usuário autenticado, quero ter a opção de apagar minha conta do sistema. | RF06 | Baixa | Concluído |
 
 ## ✍️ 7. Desenvolvedores e Créditos
 

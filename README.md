@@ -20,7 +20,7 @@ O site conta com uma página inicial de navegação, catálogo de recomendaçõe
 
 ---
 
-## 🛠️ 2. Funcionalidades do Sistema
+##  2. Funcionalidades do Sistema
 
 ### 2.1 Área Pública e Navegação
 

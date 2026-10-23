@@ -211,7 +211,6 @@ O Product Backlog organiza as funcionalidades e melhorias do projeto **Mesa Cine
 | **US03** | Como visitante, quero visualizar a lista de recomendações dos filmes em cartaz e assistir aos seus trailers. | RF03 | Alta | Concluído |
 | **US04** | Como novo usuário, quero me cadastrar no site informando meus dados para criar uma conta. | RF04 | Alta | Concluído |
 | **US05** | Como usuário cadastrado, quero fazer login para acessar minha área restrita no site. | RF05 | Alta | Concluído |
-| **US06** | Como usuário autenticado, quero visualizar meus dados na página "Minha Conta". | RF06 | Média | Concluído |
 | **US07** | Como usuário autenticado, quero atualizar minhas informações cadastrais caso necessário. | RF06 | Média | Concluído |
 | **US08** | Como usuário autenticado, quero ter a opção de apagar minha conta do sistema. | RF06 | Baixa | Concluído |
 

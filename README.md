@@ -2,13 +2,13 @@
 
 O **Mesa Cinema** é um site em **PHP** com banco de dados **PostgreSQL**, criado para mostrar os principais filmes que estão em cartaz atualmente e trazer recomendações personalizadas da nossa equipe.
 
-O projeto foi feito para ser simples e direto: quando você clica nas recomendações, é direcionado na hora para os trailers oficiais e para os vídeos do nosso canal no YouTube, o **Mesa Quatro**.
+O projeto foi feito para ser simples e direto: quando você clica nas recomendações, é direcionado na hora para os trailers oficiais e para os vídeos do nosso canal no YouTube, o **Mesa 4**.
 
 O site conta com uma página inicial de navegação, catálogo de recomendações e uma área completa para cadastro, login e gerenciamento da conta do usuário. O banco de dados armazena apenas as informações necessárias dos clientes cadastrados.
 
 ---
 
-## 🚀 1. Tecnologias Utilizadas
+##  1. Tecnologias Utilizadas
 
 - **PHP**: Processamento das informações, navegação e conexão com o banco.
 - **PostgreSQL**: Banco de dados relacional para armazenar os usuários.
@@ -38,7 +38,7 @@ O site conta com uma página inicial de navegação, catálogo de recomendaçõe
 
 ---
 
-## 📦 3. Como Executar o Projeto no Servidor (Deploy)
+##  3. Como Executar o Projeto no Servidor (Deploy)
 
 Para rodar o **Mesa Cinema** no seu servidor, você precisa ter o PHP configurado e o banco PostgreSQL em execução.
 
@@ -127,7 +127,7 @@ http://IP-OU-DOMINIO-DO-SERVIDOR/novomesacinema/
 
 ---
 
-## 📋 4. Especificação de Requisitos de Software (SRS)
+##  4. Especificação de Requisitos de Software (SRS)
 
 ### 4.1 Escopo do Projeto
 
@@ -155,7 +155,7 @@ O objetivo do **Mesa Cinema** é centralizar as indicações de filmes em cartaz
 
 ---
 
-## 🗄️ 5. Estrutura do Banco de Dados
+##  5. Estrutura do Banco de Dados
 
 O banco `mesacinema` possui apenas a tabela necessária para o gerenciamento de contas dos usuários do site.
 
@@ -170,7 +170,7 @@ Armazena os dados dos usuários cadastrados:
 
 ---
 
-## 📂 6. Estrutura de Pastas e Arquivos
+##  6. Estrutura de Pastas e Arquivos
 
 O projeto está organizado assim:
 
@@ -212,10 +212,10 @@ O Product Backlog organiza as funcionalidades e melhorias do projeto **Mesa Cine
 | **US04** | Como novo usuário, quero me cadastrar no site informando meus dados para criar uma conta. | RF04 | Alta | Concluído |
 | **US05** | Como usuário cadastrado, quero fazer login para acessar minha área restrita no site. | RF05 | Alta | Concluído |
 | **US07** | Como usuário autenticado, quero atualizar minhas informações cadastrais caso necessário. | RF06 | Média | Concluído |
-| **US08** | Como usuário autenticado, quero ter a opção de apagar minha conta do sistema. | RF06 | Baixa | Concluído |
+| **US08** | Como usuário autenticado, quero ter a opção de apagar minha conta do sistema. | RF06 | Alta| Concluído |
 
-## ✍️ 7. Desenvolvedores e Créditos
+##  7. Desenvolvedores e Créditos
 
 Desenvolvido por **TiagoGomesC** e a galera do canal **Mesa Quatro**.
 
-© 2026 **MesaCinema**. Todos os direitos reservados.
+© 2026 **MesaCinema**. Todos os direitos reservados. 

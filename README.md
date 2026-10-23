@@ -174,33 +174,37 @@ Armazena os dados dos usuários cadastrados:
 
 O projeto está organizado assim:
 
-novomesacinema/
-├── cad/
-│   ├── atualiza.php
-│   ├── cadastro.php
-│   ├── delete.php
-│   └── login.php
-├── imagens/
-├── includes/
-│   ├── footer.php
-│   ├── function.php
-│   └── header.php
-├── videos/
-│   └── video.mp4.png.mp4
-├── backup.sql
-├── conecta.php
-├── conta.php
-├── der.md
-├── filmes.php
-├── index.php
-└── style.css
+novomesacinema/  
+├── cad/  
+│   ├── atualiza.php  
+│   ├── cadastro.php  
+│   ├── delete.php  
+│   └── login.php  
+├── imagens/  
+├── includes/  
+│   ├── footer.php  
+│   ├── function.php  
+│   └── header.php  
+├── videos/  
+│   └── video.mp4.png.mp4  
+├── backup.sql  
+├── conecta.php  
+├── conta.php  
+├── der.md  
+├── filmes.php  
+├── index.php  
+└── style.css  
+
+### As pastas abaixo não tem relevancia no projeto
+├── videos/   
+│   └── video.mp4.png.mp4  
 
 ---
 ##  1. Product Backlog
 
 O Product Backlog organiza as funcionalidades e melhorias do projeto **Mesa Cinema**, priorizadas pelo valor entregue ao usuário e pela essencialidade para o funcionamento do site.
 
-| ID | Estória de Usuário (User Story) | Requisito Relacionado | Prioridade | Status |
+| ID | Historia de Usuário (User Story) | Requisito Relacionado | Prioridade | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **US01** | Como visitante, quero acessar a página inicial para conhecer o propósito do Mesa Cinema e navegar pelo site. | RF01 | Alta | Concluído |
 | **US02** | Como visitante, quero um botão de acesso rápido para ir direto ao canal no YouTube **Mesa Quatro**. | RF02 | Alta | Concluído |
